@@ -25,18 +25,18 @@
           #username="ngModel"
         />
         <div class="alert-danger" *ngIf="f.submitted && username.invalid">
-          <div *ngIf="username.errors.required">Username is required</div>
+          <div *ngIf="username.errors.required">Username est obligatoire</div>
           <div *ngIf="username.errors.minlength">
-            Username must be at least 3 characters
+            Username doit comporter au moins 3 caractères
           </div>
           <div *ngIf="username.errors.maxlength">
-            Username must be at most 20 characters
+            Username doit comporter au maximum 20 caractères
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="nom">nom</label>
+        <label for="nom">Nom</label>
         <input
           type="text"
           class="form-control"
@@ -48,18 +48,18 @@
           #nom="ngModel"
         />
         <div class="alert-danger" *ngIf="f.submitted && nom.invalid">
-          <div *ngIf="nom.errors.required">nom is required</div>
+          <div *ngIf="nom.errors.required">Nom est obligatoire</div>
           <div *ngIf="nom.errors.minlength">
-            nom must be at least 3 characters
+            nom doit comporter au moins 3 caractères
           </div>
           <div *ngIf="nom.errors.maxlength">
-            nom must be at most 20 characters
+            nom doit comporter au maximum 20 caractères
           </div>
         </div>
       </div>
 
       <div class="form-group">
-        <label for="prenom">prenom</label>
+        <label for="prenom">Prénom</label>
         <input
           type="text"
           class="form-control"
@@ -71,12 +71,12 @@
           #prenom="ngModel"
         />
         <div class="alert-danger" *ngIf="f.submitted && prenom.invalid">
-          <div *ngIf="prenom.errors.required">prenom is required</div>
+          <div *ngIf="prenom.errors.required">Prénom est obligatoire</div>
           <div *ngIf="prenom.errors.minlength">
-            prenom must be at least 3 characters
+            prenom doit comporter au moins 3 caractères
           </div>
           <div *ngIf="prenom.errors.maxlength">
-            prenom must be at most 20 characters
+            prenom doit comporter au maximum 20 caractères
           </div>
         </div>
       </div>
@@ -93,14 +93,14 @@
           #email="ngModel"
         />
         <div class="alert-danger" *ngIf="f.submitted && email.invalid">
-          <div *ngIf="email.errors.required">Email is required</div>
+          <div *ngIf="email.errors.required">Email est obligatoire</div>
           <div *ngIf="email.errors.email">
-            Email must be a valid email address
+            Email doit être une adresse e-mail valide
           </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password">Mot de passe</label>
         <input
           type="password"
           class="form-control"
@@ -111,14 +111,14 @@
           #password="ngModel"
         />
         <div class="alert-danger" *ngIf="f.submitted && password.invalid">
-          <div *ngIf="password.errors.required">Password is required</div>
+          <div *ngIf="password.errors.required">Mot de passe est obligatoire</div>
           <div *ngIf="password.errors.minlength">
-            Password must be at least 6 characters
+            Mot de passe doit être au moins 6 caractères
           </div>
         </div>
       </div>
       <div class="form-group">
-        <button class="btn btn-primary btn-block">Sign Up</button>
+        <button class="btn btn-primary btn-block">S'inscrire</button>
       </div>
 
       <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
@@ -127,7 +127,7 @@
     </form>
 
     <div class="alert alert-success" *ngIf="isSuccessful">
-      Your registration is successful!
+      Félicitations , votre inscription a été validée avec succès !
     </div>
   </div>
 </div>
