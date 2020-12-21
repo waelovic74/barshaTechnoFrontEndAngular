@@ -1,0 +1,13 @@
+<div class="container">
+  <header class="jumbotron">
+    <div class="container-fluid">
+      <app-offres-calendrie [offres]="offres" (offresChange)="offresChangeEvt($event)"></app-offres-calendrie>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <app-offres-list [offres]="offres"></app-offres-list>
+  </div>
+
+
+</div>

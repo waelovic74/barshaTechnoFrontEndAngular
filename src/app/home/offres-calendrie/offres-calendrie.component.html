@@ -1,0 +1,17 @@
+
+<div class="row">
+  <div class="col-xs-4 col-4 col-sm-4 col-md-4 form-group">
+    <input [(ngModel)]="dateDeb"  class="form-control" type="date" >
+  </div>
+  <div class="col-xs-4 col-4 col-sm-4 col-md-4 form-group">
+    <input [(ngModel)]="dateFin" class="form-control" type="date" >
+  </div>
+  <div class="col-xs-2 col-2 col-sm-2 col-md-2 form-group">
+    <a class="btn btn-outline-primary" (click)="filterListOffer()">Filter</a>
+
+  </div>
+  <div class="col-xs-2 col-2 col-sm-2 col-md-2 form-group">
+
+    <a class="btn btn-outline-primary " (click)="filterListOfferreset()">Reset</a>
+  </div>
+</div>

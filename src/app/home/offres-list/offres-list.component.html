@@ -1,0 +1,11 @@
+
+<div  class="row" >
+<div  *ngFor="let offre of offres" class="card col-sm-4 col-md-4 col-lg-4 " style="width:400px">
+  <img class="card-img-top" style="width: 268px;height: 200px" src="{{(offre.image) ? offre.image : no_image}}" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{offre.titre}}</h4>
+    <p class="card-text">{{offre.dateValidite | date: 'dd/MM/yyyy'}}</p>
+    <a class="btn btn-primary">{{offre.prix}} DT</a>
+  </div>
+</div>
+</div>
