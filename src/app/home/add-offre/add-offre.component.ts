@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {OffresService} from '../../_services/offres.service';
 import {Router} from '@angular/router';
 import * as moment from 'moment';
+import {Offre} from '../../_models/Offre';
+
 
 @Component({
   selector: 'app-add-offre',
@@ -9,6 +11,7 @@ import * as moment from 'moment';
   styleUrls: ['./add-offre.component.css']
 })
 export class AddOffreComponent implements OnInit {
+
 
   constructor(private offresService: OffresService, private router: Router) { }
 
@@ -26,4 +29,6 @@ export class AddOffreComponent implements OnInit {
     );
     this.router.navigate(['home']);
   }
+
+
 }

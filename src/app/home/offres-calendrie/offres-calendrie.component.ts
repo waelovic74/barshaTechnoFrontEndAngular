@@ -30,6 +30,8 @@ export class OffresCalendrieComponent implements OnInit {
   }
 
   filterListOfferreset() {
+    this.dateDeb ="";
+    this.dateFin ="";
     this.offresService.getOffresList().subscribe(offres =>{
       this.offres = offres;
       this.offresChange.emit(this.offres);

@@ -1,29 +1,29 @@
-<div  class="form-group">
+<div  class="form-group container-offre">
 
-<h3>Ajouter une Nouvelle OFFRE </h3>
+<h3 style="margin-top: 25px">Ajouter une Nouvelle OFFRE </h3>
 <div  style="width: 500px;">
 <form #myform="ngForm" (ngSubmit)="createOffre(myform)">
   <div class="form-group">
     <label for="offreTitre"> Titre : </label>
-    <input ngModel name="offreTitre" size="20" type="text" class="form-control" id="offreTitre" />
+    <input ngModel name="offreTitre" size="20" type="text" class="form-control" id="offreTitre" required="required"/>
 
   </div>
 
   <div class="form-group">
     <label for="offrePrix"> Prix : </label>
-    <input ngModel name="offrePrix" size="20" type="text" class="form-control" id="offrePrix" />
+    <input ngModel name="offrePrix" size="20" type="text" class="form-control" id="offrePrix" required="required" />
   </div>
   <div class="form-group">
     <label for="offreImage"> Image : </label>
-    <input ngModel name="offreImage" size="20" type="text" class="form-control" id="offreImage" />
+    <input ngModel name="offreImage" size="20" type="text" class="form-control" id="offreImage" required="required"/>
   </div>
 
   <div class="form-group">
     <label for="offreDateV"> Date Validite : </label>
-    <input ngModel name="offreDateV" size="20"  class="form-control" id="offreDateV" type="date"/>
+    <input ngModel name="offreDateV" size="20"  class="form-control" id="offreDateV" type="date" required="required"/>
   </div>
 
-  <button class="btn btn-primary">Ajouter</button>
+  <button [disabled]="myform.invalid" class="btn btn-primary">Ajouter</button>
 </form>
 </div>
 </div>
